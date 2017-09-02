@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Head of the Root -->
+<head> <!-- child sub root of the html tag as head tag  -->
+	<meta charset="UTF-8">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+         function printattr(key)
+         {
+           var print=function(value)
+           {
+            return key+":"+value;
+           }
+            return print;
+         };
+
+         var mynameprint=new printattr("Name");
+          console.log(mynameprint("haha"));
+    </script>
+</body>
+</html>
